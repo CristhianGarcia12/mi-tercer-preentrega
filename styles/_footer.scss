@@ -1,0 +1,35 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+footer{
+    background-color: $color1;
+    text-align: center;
+    color: $color4;
+    font-size: 18px;
+    
+}
+footer a{
+    color: $color2;
+    font-size: 35px;
+    letter-spacing: 35px;
+    text-decoration: none;
+    &:hover{
+        color: $color4;
+    }
+}
+.whatsapp{
+    height: 35px;
+    width: 33px;
+    color: $color2;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+}

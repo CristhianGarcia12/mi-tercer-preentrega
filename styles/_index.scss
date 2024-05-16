@@ -1,0 +1,131 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+.jumbotron{
+    background-image: url(../imagenes/Entrada.jpeg);
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
+@mixin sizes ($bgcolor, $color){
+    background-color: $bgcolor;
+    color: $color;
+}
+h1{
+    @include sizes ($color2, $color4);
+    text-align: center;
+    padding: 15px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4"
+    "img5 img4";
+    grid-gap: 15px;
+    padding: 10px;
+}
+.item{
+    border: 5px solid $color2;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    transition: all 0.7s;
+    filter: grayscale(100%);
+}
+.item:hover{
+    filter: grayscale(0%);
+    transform: scale(1.09);
+}
+.item1{
+    grid-area: img1;
+    background-image: url(../imagenes/tita.jpg);
+}
+.item2{
+    grid-area: img2;
+    background-image: url(../imagenes/don\ satur.png);
+}
+.item3{
+    grid-area: img3;
+    background-image: url(../imagenes/pepito.png);
+}
+.item4{
+    grid-area: img4;
+    background-image: url(../imagenes/picodulce.jpg);
+}
+.item5{
+    grid-area: img5;
+    background-image: url(../imagenes/rumba.png);
+}
+.fin-galeria{
+    text-align: center;
+    font-size: 25px;
+    p{
+        color: $color2;
+    }
+    a{
+        background-color: $color2;
+        border: 2px solid $color2;
+        color: $color3;
+        border-radius: 7px;
+        text-decoration: none;
+        &:hover{
+            background-color: $color4;
+        }
+    }
+}
+.nleft{
+    background-image: url(../imagenes/ProductosEstanterias.webp);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    background-color: $color2;
+    color: $color4;
+    text-align: center;
+}
+.quienes-somos{
+    font-size: 25px;
+    color: $color2;
+    text-align: center;
+}
+.mas-info{
+    background-color: $color2;
+    border: 2px solid $color2;
+    color: $color3;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 3px;
+    &:hover{
+        background-color: $color4;
+    }
+}
+h3{
+    background-color: $color2;
+    border-radius: 5px;
+    color: $color4;
+    font-size: 23px;
+    margin: 25px;
+    padding: 10px;
+}
+article{
+    border: 2px solid rgb(153, 9, 158);
+    text-align: center;
+    i{
+        font-size: 30px;
+        color: $color2;
+    }
+    p{
+        font-size: 18px;
+        color: $color2;
+    }
+}

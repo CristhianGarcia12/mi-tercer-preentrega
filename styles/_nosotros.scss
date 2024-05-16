@@ -1,0 +1,55 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+.nosotros-carrousel{
+    margin-left: 165px;
+}
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 60vh;
+    width: 100vh;
+}
+.nosotros2{
+    background-color: $color1;
+    border-radius: 7px;
+}
+.nosotros-quienes-somos{
+    text-align: center;
+    h1{
+            color: $color2;
+            text-shadow: 0 0 5px blue;
+            text-decoration: underline;
+            font-size: 45px;
+    }
+    p{
+            color: red;
+            font-size: 30px;
+    }
+}
+.nosotros2 h1{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: $color2;
+    text-shadow: 10px 0 10px $color4;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.nosotros2 p{
+    color: $color4;
+    font-size: 35px;
+}
+.ubicacion{
+    text-align: center;
+    h1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $color2;
+    }
+}

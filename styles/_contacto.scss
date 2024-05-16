@@ -1,0 +1,32 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+.contacto{
+    text-align: center;
+    color: $color2;
+}
+.input{
+    border-radius: 10px;
+    background-color: rgb(220, 188, 247);
+    color: black;
+    border: 5px solid $color2;  
+}
+.submit{
+    font-size: 23px;
+    border: 3px solid $color2;
+    background-color: $color2;
+    color: $color3;
+}
+.submit:hover{
+    background-color: $color4;
+    color: $color3;
+}
+label{
+    font-size: 30px;
+    color: blue;
+}

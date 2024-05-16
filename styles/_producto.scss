@@ -1,0 +1,69 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+.titulo-productos{
+    text-align: center;
+    color: $color2;
+}
+.sector-galletitas{
+    background-color: $color2;
+}
+.imagen-productos{
+    display: flex;
+    justify-content: center;
+}
+.left-galletitas{
+    background-image: url(../imagenes/cerealitas.png);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.item-productos{
+    border: 5px solid black;
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 0 10px 20px blue;
+    }
+    img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.2);
+    }
+    }
+    figure{
+        overflow: hidden;
+    }
+}
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info-productos button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: $color4;
+    padding: 15px 10px;
+    cursor: pointer;
+}

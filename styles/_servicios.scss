@@ -1,0 +1,24 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+.servicios{
+    text-align: center;
+    color: $color2;
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+    img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 500px;
+        width: 500px;
+    }
+}

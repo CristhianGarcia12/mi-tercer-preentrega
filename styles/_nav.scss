@@ -1,0 +1,16 @@
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$color4: white;
+$color5: black;
+$font1: fantasy;
+$font2: arial;
+
+.navbar{
+    background-color: $color1;
+}
+.nav-link{
+    color: $color4 !important;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
