@@ -1,17 +1,355 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 6 | @import "_productos";
- *   |         ^^^^^^^^^^^^
- *   '
- *   styles\style.scss 6:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 6 \2502  @import \"_productos\";\d\a   \2502          ^^^^^^^^^^^^\a   \2575 \a   styles\\style.scss 6:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.body {
+  background-color: rgb(253, 214, 221);
+}
+
+.navbar {
+  background-color: rgb(188, 126, 240);
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.jumbotron {
+  background-image: url(../imagenes/Entrada.jpeg);
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  background-color: darkmagenta;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  grid-template-areas: "img1 img2" "img3 img4" "img5 img4";
+  grid-gap: 15px;
+  padding: 10px;
+}
+
+.item {
+  border: 5px solid darkmagenta;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+  transition: all 0.7s;
+  filter: grayscale(100%);
+}
+
+.item:hover {
+  filter: grayscale(0%);
+  transform: scale(1.09);
+}
+
+.item1 {
+  grid-area: img1;
+  background-image: url(../imagenes/tita.jpg);
+}
+
+.item2 {
+  grid-area: img2;
+  background-image: url(../imagenes/don\ satur.png);
+}
+
+.item3 {
+  grid-area: img3;
+  background-image: url(../imagenes/pepito.png);
+}
+
+.item4 {
+  grid-area: img4;
+  background-image: url(../imagenes/picodulce.jpg);
+}
+
+.item5 {
+  grid-area: img5;
+  background-image: url(../imagenes/rumba.png);
+}
+
+.fin-galeria {
+  text-align: center;
+  font-size: 25px;
+}
+.fin-galeria p {
+  color: darkmagenta;
+}
+.fin-galeria a {
+  background-color: darkmagenta;
+  border: 2px solid darkmagenta;
+  color: pink;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.fin-galeria a:hover {
+  background-color: white;
+}
+
+.nleft {
+  background-image: url(../imagenes/ProductosEstanterias.webp);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  background-color: darkmagenta;
+  color: white;
+  text-align: center;
+}
+
+.quienes-somos {
+  font-size: 25px;
+  color: darkmagenta;
+  text-align: center;
+}
+
+.mas-info {
+  background-color: darkmagenta;
+  border: 2px solid darkmagenta;
+  color: pink;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 3px;
+}
+.mas-info:hover {
+  background-color: white;
+}
+
+h3 {
+  background-color: darkmagenta;
+  border-radius: 5px;
+  color: white;
+  font-size: 23px;
+  margin: 25px;
+  padding: 10px;
+}
+
+article {
+  border: 2px solid rgb(153, 9, 158);
+  text-align: center;
+}
+article i {
+  font-size: 30px;
+  color: darkmagenta;
+}
+article p {
+  font-size: 18px;
+  color: darkmagenta;
+}
+
+.nosotros-carrousel {
+  margin-left: 165px;
+}
+
+.slide {
+  margin-top: 10px;
+}
+
+.slide img {
+  height: 60vh;
+  width: 100vh;
+}
+
+.nosotros2 {
+  background-color: rgb(188, 126, 240);
+  border-radius: 7px;
+}
+
+.nosotros-quienes-somos {
+  text-align: center;
+}
+.nosotros-quienes-somos h5 {
+  color: darkmagenta;
+  text-shadow: 0 0 5px blue;
+  text-decoration: underline;
+  font-size: 45px;
+}
+.nosotros-quienes-somos p {
+  color: red;
+  font-size: 30px;
+}
+
+.nosotros2 h5 {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  color: darkmagenta;
+  text-shadow: 10px 0 10px white;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.nosotros2 p {
+  color: white;
+  font-size: 35px;
+}
+
+.ubicacion {
+  text-align: center;
+}
+.ubicacion h5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: darkmagenta;
+}
+
+.servicios {
+  text-align: center;
+  color: darkmagenta;
+}
+.servicios h1 {
+  font-size: 40px;
+}
+.servicios p {
+  font-size: 25px;
+}
+.servicios img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 500px;
+  width: 500px;
+}
+
+.titulo-productos {
+  text-align: center;
+  color: darkmagenta;
+}
+
+.sector-galletitas {
+  background-color: darkmagenta;
+}
+
+.imagen-productos {
+  display: flex;
+  justify-content: center;
+}
+
+.left-galletitas {
+  background-image: url(../imagenes/cerealitas.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-productos {
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.item-productos:hover {
+  box-shadow: 0 10px 20px blue;
+}
+.item-productos img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.item-productos img:hover {
+  transform: scale(1.2);
+}
+.item-productos figure {
+  overflow: hidden;
+}
+
+.info-producto {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-productos button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.contacto {
+  text-align: center;
+  color: darkmagenta;
+}
+
+.input {
+  border-radius: 10px;
+  background-color: rgb(220, 188, 247);
+  color: black;
+  border: 5px solid darkmagenta;
+}
+
+.submit {
+  font-size: 23px;
+  border: 3px solid darkmagenta;
+  background-color: darkmagenta;
+  color: pink;
+}
+
+.submit:hover {
+  background-color: white;
+  color: pink;
+}
+
+label {
+  font-size: 30px;
+  color: blue;
+}
+
+footer {
+  background-color: rgb(188, 126, 240);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+footer a {
+  color: darkmagenta;
+  font-size: 35px;
+  letter-spacing: 35px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+
+.whatsapp {
+  height: 35px;
+  width: 33px;
+  color: darkmagenta;
+  position: fixed;
+  right: 40px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */
