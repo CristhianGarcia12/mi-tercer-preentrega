@@ -1,0 +1,9 @@
+1) coloque los partials y las variables
+2) ordene la jerarquia de encabezados
+3) optimice las imagenes
+4) agregue etiquetas meta al inicio
+5) agregue etiquetas meta a contacto
+6) agregue etiquetas meta a nosotros
+7) agregue etiquetas meta a productos
+8) agregue etiquetas meta a servicios
+9) complete los alt
