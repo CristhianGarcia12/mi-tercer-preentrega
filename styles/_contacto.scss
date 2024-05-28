@@ -21,10 +21,10 @@ $font2: arial;
     border: 3px solid $color2;
     background-color: $color2;
     color: $color3;
-}
-.submit:hover{
-    background-color: $color4;
-    color: $color3;
+    &:hover{
+        background-color: $color4;
+        color: $color3;
+    }
 }
 label{
     font-size: 30px;

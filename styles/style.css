@@ -61,7 +61,7 @@ h1 {
 
 .item2 {
   grid-area: img2;
-  background-image: url(../imagenes/don\ satur.png);
+  background-image: url(../imagenes/don-satur.png);
 }
 
 .item3 {
@@ -98,7 +98,7 @@ h1 {
 }
 
 .nleft {
-  background-image: url(../imagenes/ProductosEstanterias.webp);
+  background-image: url(../imagenes/Productos-estanterias.webp);
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -207,6 +207,7 @@ article p {
 }
 
 .servicios {
+  overflow-x: hidden;
   text-align: center;
   color: darkmagenta;
 }
@@ -313,7 +314,6 @@ article p {
   background-color: darkmagenta;
   color: pink;
 }
-
 .submit:hover {
   background-color: white;
   color: pink;
