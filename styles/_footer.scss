@@ -16,7 +16,7 @@ footer{
 footer a{
     color: $color2;
     font-size: 35px;
-    letter-spacing: 35px;
+    letter-spacing: 25px;
     text-decoration: none;
     &:hover{
         color: $color4;
@@ -25,9 +25,9 @@ footer a{
 .whatsapp{
     height: 35px;
     width: 33px;
-    color: $color2;
+    color: $color5;
     position: fixed;
-    right: 40px;
+    right: 15px;
     bottom: 10px;
     text-align: center;
     line-height: 40px;
